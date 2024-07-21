@@ -1,0 +1,172 @@
+.key-vision {
+  padding-top: 295px;
+  padding-bottom: 295px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+@media (max-width: 375px) {
+  .key-vision {
+    padding: 0;
+    height: 480px;
+  }
+}
+.key-vision h2 {
+  font-size: 40px;
+}
+.key-vision p {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.feature {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (max-width: 375px) {
+  .feature {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+}
+.feature h3 {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+.feature p {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+@media (max-width: 375px) {
+  .feature p {
+    margin-bottom: 8px;
+  }
+}
+.feature a {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--primary-gold);
+  font-weight: 400;
+}
+@media (max-width: 375px) {
+  .feature .feature-text {
+    padding-top: 8px;
+    padding-bottom: 32px;
+  }
+}
+@media (max-width: 375px) {
+  .feature .feature-text-secondary {
+    padding-top: 8px;
+  }
+}
+.feature .feature-text-secondary li {
+  margin-bottom: 52px;
+}
+.feature .feature-text-secondary li:last-child {
+  margin-bottom: 60px;
+}
+.feature .feature-text-secondary li h3 {
+  font-size: 24px;
+}
+.feature .feature-text-secondary li p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+@media (max-width: 375px) {
+  .feature .feature-text-secondary li p {
+    margin-bottom: 20px;
+  }
+  .feature .feature-text-secondary li p:last-child {
+    margin-bottom: 20px;
+  }
+}
+.feature .feature-img {
+  overflow: hidden;
+  width: 100%;
+}
+.feature .feature-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product-preview {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--primary-light-gray);
+}
+@media (max-width: 375px) {
+  .product-preview .product-list-item {
+    margin-bottom: 32px;
+  }
+}
+.product-preview .product-list-item .product-list-img {
+  height: 540px;
+  --bs-aspect-ratio: 150%;
+  position: relative;
+}
+@media (max-width: 375px) {
+  .product-preview .product-list-item .product-list-img {
+    height: 350px;
+  }
+}
+.product-preview .product-list-item .product-list-img img {
+  -o-object-position: bottom center;
+     object-position: bottom center;
+}
+.product-preview .product-list-item h3 {
+  margin-top: 8px;
+}
+.product-preview .product-list-item p.brand {
+  margin-bottom: 16px;
+}
+@media (max-width: 375px) {
+  .product-preview .product-list-item p.brand {
+    margin-bottom: 4px;
+  }
+}
+
+.bottle-recycling {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (max-width: 375px) {
+  .bottle-recycling {
+    padding-bottom: 40px;
+  }
+}
+.bottle-recycling .bottle-recycling-img {
+  width: 100%;
+  height: 520px;
+}
+.bottle-recycling .bottle-recycling-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 375px) {
+  .bottle-recycling .bottle-recycling-text {
+    padding-top: 8px;
+  }
+}
+.bottle-recycling .bottle-recycling-text h3 {
+  font-size: 32px;
+}
+.bottle-recycling .bottle-recycling-text h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 200;
+}
+.bottle-recycling .bottle-recycling-text p {
+  margin-bottom: 16px;
+}
+@media (max-width: 375px) {
+  .bottle-recycling .bottle-recycling-text p {
+    margin-bottom: 8px;
+  }
+}
+.bottle-recycling .bottle-recycling-text a {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--primary-gold);
+  font-weight: 400;
+  margin-bottom: 16px;
+}/*# sourceMappingURL=index.css.map */

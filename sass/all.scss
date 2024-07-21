@@ -1,0 +1,307 @@
+:root {
+  --primary-gold: #916019;
+  --primary-dark-gray: #8D8D8D;
+  --primary-light-gray: #E0E0E0;
+}
+
+body {
+  font-family: SF Pro Text, PingFang TC, sans-serif;
+
+  p {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  a, button{
+    &:hover{
+      opacity: 0.7;
+      transition: 0.3s
+    }
+  }
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  vertical-align: middle;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+// break point setting
+@mixin pad {
+  @media(max-width:767px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media(max-width:375px) {
+    @content;
+  }
+}
+
+// nav bar
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+
+  @include mobile {
+    padding: 0;
+  }
+
+  h1.logo a {
+    display: block;
+    img{width: 128px;
+      height: 38px;}
+    
+  }
+
+  .navbar-mobile-cart a {
+
+    color: var(--primary-dark-gray);
+    padding: 0;
+    margin-right: 20px;
+    font-size: 12px;
+
+    span.cart-num {
+      color: white;
+      background-color: #916000;
+      height: 13px;
+      line-height: 1.2;
+    }
+  }
+}
+
+
+.navbar .navbar-nav li {
+  margin-right: 32px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 20px;
+  color: var(--primary-dark-gray);
+  padding: 0;
+
+  .material-icons {
+    margin-right: 3px;
+  }
+}
+
+.navbar .navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+
+
+
+.product-list-item {
+  margin-bottom: 48px;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  p.price {
+    span {
+      margin-left: 8px;
+      text-decoration: line-through;
+      color: var(--primary-dark-gray)
+    }
+
+    @include mobile {
+      margin-bottom: 0px;
+    }
+  }
+
+  .product-list-img {
+
+    img {
+      object-fit: cover;
+    }
+
+    &.sold-out {
+      &::before {
+        padding: 0;
+        background: rgba(0, 0, 0, 0.3);
+        font-size: 24px;
+        color: #fff;
+        content: "Sold out";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+      }
+    }
+  }
+
+  .card-btn {
+    a {
+      margin-right: 11px;
+      color: var(--primary-gold)
+    }
+  }
+}
+
+
+
+
+
+
+// footer
+footer {
+  background-color: var(--primary-gold);
+  padding-top: 20px;
+  padding-bottom: 22px;
+
+
+
+  .footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    img {
+      width: 128px;
+      height: 38px;
+      margin-right: 20px;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1;
+      color: white;
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .footer-menu {
+    margin: 0;
+
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 18px;
+
+      a {
+        font-weight: 300;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+  }
+}
+
+// section of subscribe
+.key-vision,
+.feature {
+  button {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 30px;
+    width: 350px;
+    font-size: 24px;
+    line-height: 1;
+    height: 60px;
+
+    @include pad {
+      width: 100%;
+    }
+
+
+    &.btn-white {
+      color: white;
+      border: 2px solid #FFFFFF;
+      font-size: 28px;
+    }
+  }
+}
+
+.subscribe {
+  background: url(../img/footer-banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding-top: 312px;
+  padding-bottom: 112px;
+
+  @include mobile {
+    background-position: center left;
+  }
+
+  h2 {
+    font-size: 32px;
+    color: var(--primary-dark-gray);
+    margin-bottom: 20px;
+  }
+
+  .input-group {
+    border: 2px solid var(--primary-gold);
+    border-radius: 4px;
+    height:60px;
+
+    input {
+      &::-webkit-input-placeholder {
+        color: var(--primary-dark-gray);
+      }
+    }
+
+    button {
+      width: 130px;
+      background-color: var(--primary-gold);
+      color: white;
+      border: 0;
+      border-radius: 0;
+      font-size: 16px;
+    }
+  }
+}

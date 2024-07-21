@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D’Perfume</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- page style -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md flex-column sticky-top">
+        <div class="container">
+            <h1 class="logo mb-0">
+                <a href="./index.html" target="_self" alt="logo">
+                    <picture>
+                        <!-- 當螢幕寬度少於600px時，替換圖片 -->
+                        <source srcset="./img/d’Perfume.png" media="(max-width: 600px)">
+                        <img src="./img/d’Perfume@2x.png" alt="Logo">
+                    </picture>
+                </a>
+            </h1>
+            <div class="d-flex">
+                <div class="navbar-mobile-cart nav-item d-flex align-items-center d-md-none">
+                    <a class="nav-link position-relative">
+                        <span class="material-icons">shopping_cart</span>
+                        <span
+                            class="cart-num position-absolute top-8 start-20 translate-middle text-bg-danger rounded-pill px-1">3</span>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-icons" style="font-size: 30px;">menu</span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html"><span class="material-icons">store</span>Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="material-icons">person</span>log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="material-icons">favorite</span>Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><span class="material-icons">shopping_cart</span>Chart(3)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="brand-menu d-none d-md-flex sticky-top">
+        <div class="container">
+            <div class="row">
+                <ul class="d-flex align-items-center mb-0">
+                    <li class="brand-menu-item list-unstyled">
+                        <a href="#" class="brand text-white">CHANEL</a>
+                    </li>
+                    <li class="brand-menu-item list-unstyled">
+                        <a href="#" class="brand text-white">Jo Malone</a>
+                    </li>
+                    <li class="brand-menu-item list-unstyled">
+                        <a href="#" class="brand text-white">Curology</a>
+                    </li>
+                    <li class="brand-menu-item list-unstyled">
+                        <a href="#" class="brand text-white">Dior</a>
+                    </li>
+                    <li class="brand-menu-item list-unstyled">
+                        <a href="#" class="brand text-white">Chloe</a>
+                    </li>
+                    <li class="brand-menu-item list-unstyled">
+                        <a href="#" class="brand text-white">ZARA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section of product list -->
+
+    <section class="product-list">
+        <div class="container">
+            <div class="row">
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/charlesdeluvio-3IMl0kCxpHQ-unsplash.jpg" alt="Poppy & Barley">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/hyunwon-jang-t8ueo1LnzEU-unsplash.jpg" alt="Poppy & Barley"
+                            style="object-position: bottom center;">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/laurissi-CVz2Ove_NuI-unsplash.jpg" alt="Poppy & Barley">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/laura-chouette-3rpmeLFPeQI-unsplash.jpg" alt="Poppy & Barley">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/kelvin-lutan-5f4yovjJw4c-unsplash.jpg" alt="Poppy & Barley">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/home-intro-3.jpg" alt="Poppy & Barley"
+                            style="object-position: bottom left;">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/laura-chouette-WbQWMVc71kw-unsplash.jpg" alt="Poppy & Barley">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/maxim-lozyanko-qFsxwpoDIB4-unsplash.jpg" alt="Poppy & Barley">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/home-intro-2.png" alt="Poppy & Barley">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/april-c-9XitDoap1xA-unsplash.jpg" alt="Poppy & Barley">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/the-tonik-A16IxicPOfY-unsplash.jpg" alt="Poppy & Barley">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item col-6 col-md-3">
+                    <div class="product-list-img ratio ratio-1x1">
+                        <img class="w-100" src="img/laura-chouette-qoA-Vg06kdE-unsplash.jpg" alt="Poppy & Barley">
+                    </div>
+                    <h3>Poppy & Barley</h3>
+                    <p class="brand">Jo Malone</p>
+                    <p class="price">NT$1,380<span>NT$1,580</span></p>
+                    <div class="card-btn d-flex">
+                        <a href="">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <nav aria-label="pagination">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section of subscribe -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-4">
+                    <h2 class="">
+                        記得 <br>
+                        訂閱以獲取更多資訊！
+                    </h2>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Your email address"
+                            aria-label="Your email address" aria-describedby="button-addon2">
+                        <button class="btn" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="footer-copyright">
+                    <picture>
+                        <!-- 當螢幕寬度少於600px時，替換圖片 -->
+                        <source srcset="./img/d’Perfumew.png" media="(max-width: 600px)">
+                        <img src="./img/d’Perfumew@2x.png" alt="Logo">
+                    </picture>
+                    <p>© 2020. All Rights Reserved.</p>
+                </div>
+                <ul class="footer-menu d-flex d-none d-md-flex align-items-center list-unstyled">
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
