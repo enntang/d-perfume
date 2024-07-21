@@ -48,7 +48,8 @@ body a:hover, body button:hover {
 }
 @media (max-width: 375px) {
   .navbar {
-    padding: 0;
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 }
 .navbar h1.logo a {
